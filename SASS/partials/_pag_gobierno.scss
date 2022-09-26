@@ -1,0 +1,155 @@
+
+.hero_gobierno{
+    width: 100%;
+    height: 50vh;
+    min-height: 200px;
+    max-height: 300px;
+    position:relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+    background-image: $color_hero_fondo;
+    background-size: contain;
+
+    .hero_gobierno_title{
+        font-size: 1.8em;
+    }
+    .hero_gobierno_paragraph{
+        font-size: 1.8em;
+    }
+
+     
+    .nav {
+        
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .nav_link{
+            margin-left: 280px;
+            padding: 0;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: max-content;
+            gap:2em;
+
+            .menu_link--select{
+                background: $color_select;
+            }
+
+            .nav_items{
+                list-style: none;
+
+                .nav_links{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;  
+                }
+                .nav_links:hover{
+                    background: $color_hover;
+                    color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    box-shadow: 
+                        0 0 5px $color_hover,
+                        0 0 25px $color_hover,
+                        0 0 50px $color_hover,
+                        0 0 100px $color_hover;
+                }  
+            }   
+       }
+       .nav_menu{
+            margin-left: auto;
+            cursor: pointer;
+            display: none;
+            color:#fff;
+
+            .nav_img{
+                display: block;
+                width: 30px;
+            }
+        }
+        .nav_close{
+            display: var(--show, none);
+        }
+
+        #ctn-icon-search{
+            position: absolute;
+            right:65px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            top: 30px;
+        }
+        
+        #ctn-icon-search{
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 300ms ;
+        }
+        
+        #ctn-icon-search img:hover{
+            background: #03e9f4;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 100px #03e9f4;
+        }    
+
+    }
+    .animate__animated.animate__lightSpeedInRight{
+        --animate-duration: 2s;
+
+        .hero_gobierno_title{
+            padding-top: 20px;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-decoration: solid;
+            text-align: left;
+        }
+
+        .hero_gobierno_paragraph{
+            margin-bottom:0px;
+            color: rgb(255, 255, 255);
+            text-decoration: solid;
+            font-size: 2rem;
+            text-align: left;
+        }
+    } 
+}
+
+
+
+
+.stiker img{
+    margin: 110px;
+    height: 180px;
+}
+
+
+
+.gobierno{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .card{
+        width: 350px;
+       height: 450px;
+
+        .card-img-top{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%; 
+            margin: 0px auto;
+            clip-path: circle();
+            transition: all 3s ease;
+        }   
+        .card-img-top:hover{
+            transform: rotateY(-360deg);
+        }
+    }
+}
+
+

@@ -1,0 +1,284 @@
+
+.contacto{
+  background: $color_formulario;
+}
+
+.hero_contacto{
+  width: 100%;
+  height: 50vh;
+  min-height: 100px;
+  max-height: 800px;
+  position:relative;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(#141e30, #243b55);
+
+ 
+
+  .nav {
+        
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .nav_link{
+        margin-left: 280px;
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        gap:2em;
+        padding-bottom: 30%;
+
+        .menu_link--select{
+            background: $color_select;
+        }
+
+        .nav_items{
+            list-style: none;
+
+            .nav_links{
+                color: rgb(255, 255, 255);
+                text-decoration: none;  
+            }
+            .nav_links:hover{
+                background: $color_hover;
+                color: rgb(255, 255, 255);
+                border-radius: 5px;
+                box-shadow: 
+                    0 0 5px $color_hover,
+                    0 0 25px $color_hover,
+                    0 0 50px $color_hover,
+                    0 0 100px $color_hover;
+            }  
+        }   
+   }
+   .nav_menu{
+        margin-left: auto;
+        cursor: pointer;
+        display: none;
+        color:#fff;
+
+        .nav_img{
+            display: block;
+            width: 30px;
+        }
+    }
+    .nav_close{
+        display: var(--show, none);
+    }
+
+    #ctn-icon-search{
+        position: absolute;
+        right:225px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        top: 30px;
+    }
+    
+    #ctn-icon-search{
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 300ms ;
+    }
+    
+    #ctn-icon-search img:hover{
+        background: #03e9f4;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 0 5px #03e9f4,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 100px #03e9f4;
+    }    
+
+  }
+    .hero_contacto_title{
+        margin-top: -20%;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        text-align: left;
+    }
+
+    .hero_contacto_paragraph{
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        font-size: 2rem;
+        text-align: left;
+    }
+} 
+
+
+
+/*ANIMACIÓN DE OLAS*/
+
+.inner-header {
+  height:40vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+
+  .flex { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+}
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+}
+
+/*formulario*/
+
+.form-contacto-register{
+    
+    width: 95%;
+    margin-left: 25%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    max-width: 700px;
+    margin-top: 70px;
+    margin-bottom:30px ;
+    background: rgba(42, 55, 75, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+  .form--title{
+    margin-top: 0;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+
+    .h1{
+      text-align: center;
+      color: #FFF;
+      font-size: 50px;
+      background: rgb(0,0,0,0.4);
+      margin-top: 100px;
+    }
+  }
+
+  .container--flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+
+    .form--label, .form--input{
+      display: block;
+    }
+    .form--label{
+      width: 60%;
+      color: #fff;
+    }
+    .form--input{
+      width: 70%;
+      margin-right: 10px;
+      padding: 10px;
+    }
+    textarea{
+      display: block;
+      width: 80%;
+      margin-right: 10px;
+      min-height: 100px;
+      max-height: 100px;
+    }
+    .form--file{
+      font-size: 1em;
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  .form--file{
+    font-size: 1em;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .form--file{
+    display: block;
+    background: $color_select;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    width: 99%;
+    padding: 10px; 
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .form--file:hover {
+    background: $color_hover;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px $color_hover,
+                0 0 25px $color_hover,
+                0 0 50px $color_hover,
+                0 0 100px $color_hover;
+  }
+  .form--submit{
+    width: 100%;
+    padding: 10px; 
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .form--submit{
+    display: block;
+    background: $color_select;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    
+  }
+}
+.form--submit:hover {
+  background: $color_hover;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 5px $color_hover,
+              0 0 25px $color_hover,
+              0 0 50px $color_hover,
+              0 0 100px $color_hover;
+}

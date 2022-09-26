@@ -1,0 +1,241 @@
+
+.digesto{
+    background: $color_hero_fondo;
+}
+
+.hero_digesto{
+    width: 100%;
+    height: 30vh;
+    min-height: 250px;
+    max-height: 600px;
+    position:relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: rgb(255, 255, 255);
+    background-image: $color_hero_fondo;
+    background-size: contain;
+    box-shadow: 0 4px 25px 1px rgba(77, 77, 77, 0.642);
+
+    .nav {
+        
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+           
+        .nav_link{
+            margin-left: 280px;
+            padding: 0;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: max-content;
+            gap:2em;
+
+            .menu_link--select{
+                background: $color_select;
+            }
+        
+        
+            .nav_items{
+                list-style: none;
+                
+                .nav_links{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;  
+                    }
+    
+                .nav_links:hover{
+                    background: $color_hover;
+                    color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    box-shadow: 
+                        0 0 5px $color_hover,
+                        0 0 25px $color_hover,
+                        0 0 50px $color_hover,
+                        0 0 100px $color_hover;
+                }  
+            }
+        }
+         
+        .nav_menu{
+            margin-left: auto;
+            cursor: pointer;
+            display: none;
+            color:#fff;
+
+                
+            .nav_img{
+                display: block;
+                width: 30px;
+            }
+        }
+        
+        .nav_close{
+            display: var(--show, none);
+        }
+
+
+        #ctn-icon-search{
+            position: absolute;
+            right:65px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            top: 30px;
+        }
+        
+        #ctn-icon-search{
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 300ms ;
+        }
+        
+        #ctn-icon-search img:hover{
+            background: #03e9f4;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 100px #03e9f4;
+        }    
+
+    }
+    .hero_digesto_container{
+        max-width: 80;    
+        display: grid;
+        grid-auto-rows: max-content;
+        align-content: center;
+        gap: 1em;
+        padding-bottom: 290px;
+
+        .animate__animated.animate__lightSpeedInRight{
+            --animate-duration: 2s;
+        }
+    
+        .hero_digesto_title {
+            padding-top: 10px;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-decoration: solid;
+            text-align: left;
+                
+        }
+        
+        .hero_digesto_paragraph {
+            margin-bottom:0px;
+            color: rgb(255, 255, 255);
+            text-decoration: solid;
+            font-size: 2rem;
+            text-align: left;
+        }
+        
+    }
+}
+
+.form-register{
+    
+    width: 95%;
+    margin-left: 25%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    max-width: 700px;
+    margin-top: 50px;
+    margin-bottom:30px ;
+    background: $color_formulario;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+    .form--title{
+        margin-top: 0;
+        font-size: 2.5em;
+        text-align: center;
+        color: #fff;
+    }
+    .container--flex{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+
+        .form--label, .form--input{
+            display: block;
+        }
+
+        .form--label{
+            width: 60%;
+            color: #fff;
+        }
+        
+        .form--input{
+            width: 70%;
+            margin-right: 10px;
+            padding: 10px;
+        }
+    }
+    .form--file{
+        font-size: 1em;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .form--file:hover {
+        background: $color_hover;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 0 5px $color_hover,
+                0 0 25px $color_hover,
+                0 0 50px $color_hover,
+                0 0 100px $color_hover;
+    }
+    .form--file{
+        display: block;
+        background: $color_select;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        color: #fff;
+        width: 99%;
+        padding: 10px; 
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .form--submit:hover {
+        background: $color_hover;
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 0 5px $color_hover,
+                0 0 25px $color_hover,
+                0 0 50px $color_hover,
+                0 0 100px $color_hover;
+    }
+
+    .form--submit{
+        display: block;
+        background: $color_select;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        color: #fff;
+        width: 99%;
+        padding: 10px; 
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+
+.hero_container{
+    .hero_title{
+        text-align: left;
+        font-size: 2em;
+    }
+    .hero_paragraph{
+        text-align: left;
+        font-size: 1.9em;
+    }
+}
+.container_acordeon{
+    background-image: $color_hero_fondo;
+    color: #fff;
+
+    .accordion-body{
+        background-image: $color_hero_fondo;
+        color: #fff;
+    }
+
+    .licencia{
+        text-align: center;
+        color: #fff;
+        font-size: 1.8rem;
+    }
+
+    .accordion-item{
+        width: 100%;
+        background-image: $color_hero_fondo;;
+        
+    }
+    .accordion-button{
+        background-image: linear-gradient(60deg, #545d6e 0%, #485563 100%);
+    }
+}
+
+
